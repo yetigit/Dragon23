@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.9.1)
+
+set(PROJECT_NAME DragonGraph) 
+
+set(DRAGONGRAPH_INCL "${CMAKE_CURRENT_SOURCE_DIR}/..")
+
+project(${PROJECT_NAME})
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DWIN32 -D_USE_MATH_DEFINES -Zi")
+set(CMAKE_CXX_LINK_FLAGS "${CMAKE_CXX_LINK_FLAGS} -DEBUG")
+
+
+file(GLOB DRAGON_HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/*.hpp")
+
+
+add_executable(${PROJECT_NAME} "${CMAKE_CURRENT_SOURCE_DIR}/example/main.cpp")
+
+target_include_directories(${PROJECT_NAME} PRIVATE  ${DRAGONGRAPH_INCL})

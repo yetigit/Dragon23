@@ -1,0 +1,27 @@
+
+
+  GNM_NAMESPACE 
+  GNM_NAMESPACE_OPEN  
+  GNM_NAMESPACE_CLOSE 
+
+
+ 
+
+ GNM_EIGEN_STORAGE_ORDER // row major / col major .. 
+
+ GNM_TEST // to define to activate test specific code
+
+
+
+  GNM_CODEPOS_STR // get the current line info, file, func, ln
+
+ 
+  GNM_INLINE  // force inline 
+ GNM_EXCEPT 
+ GNM_NOEXCEPT
+ GNM_DEPRECATED
+ 
+GNM_BLK_ARR_NONUDGE // to disable automatic closest upbound power of two size for allocation on constructor
+SEVERAL_LINEAR_BLOCK_ALLOCATOR_PER_INSTANCE
+
+
